@@ -1,0 +1,115 @@
+/* FONT-STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: 0;
+  background-color: unset;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+/* APP STYLES */
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+/* HEADER */
+
+/* UPPPER NAVIGATION BAR */
+#upper__nav {
+  background: #19242d;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+#nav__div__img__logo {
+  margin: -5px 0 0 10%;
+}
+
+#nav__div__img__logo img {
+  border-right: 1px solid #394957;
+}
+
+#nav__div__img__images {
+  margin-left: -1.5%;
+}
+
+#nav__div__img__images img {
+  margin-right: 4%;
+}
+
+#nav__info {
+  gap: 25px;
+}
+
+#nav__div__icons {
+  height: 32px;
+  border-right: 1px solid #394957;
+}
+
+#nav__div__icons ul {
+  margin-left: -100%;
+}
+
+#nav__div__icons ul li {
+  margin-right: 11%;
+}
+
+#nav__div__login {
+  margin-left: -2.5%;
+  border-right: 1px solid #394957;
+}
+
+#nav__div__login button {
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#nav__div__login button div svg {
+    margin-left: -5px;
+}
+
+#nav__div__login button div {
+    margin: 5px 0 0 10px;
+}
+
+#nav__div__social {
+  border-right: 1px solid #394957;
+  margin-top: 4px;
+}
+
+#nav__phone {
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* LOWER NAVIGATION BAR */
+#lower__nav {
+  background: #202d39;
+  height: 72px;
+  flex-shrink: 0;
+}
