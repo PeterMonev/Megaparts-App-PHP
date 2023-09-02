@@ -26,7 +26,7 @@ ul {
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 100vh;
+  height: 200vh;
 }
 
 /* HEADER */
@@ -365,14 +365,41 @@ body {
 }
 
 #div__search___buttons button:nth-child(4) {
-  border: 1.5px solid #63C7C9;
+  border: 1.5px solid #63c7c9;
 }
 
 #div__search___buttons button:nth-child(5) {
-  border: 1.5px solid #DC5426;
+  border: 1.5px solid #dc5426;
 }
 
 #div__search___buttons button:nth-child(6) {
-  border: 1.5px solid #E59D48;
+  border: 1.5px solid #e59d48;
 }
 
+/* CAROUSEL IMAGES SLIDER  */
+#carouselExampleIndicators {
+  position: relative;
+}
+
+#carouselExampleIndicators ol {
+  position: absolute;
+  bottom: -15px;
+  left: 16px;
+  padding-top: 50px;
+}
+
+#carouselExampleIndicators li {
+  border-radius: 100%;
+  width: 8.663px;
+  height: 8.663px;
+  flex-shrink: 0;
+}
+
+.active {
+  background-color: #008aee !important;
+}
+
+.carousel-item {
+  height: 299px;
+  width: 100%;
+}
