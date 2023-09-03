@@ -115,7 +115,6 @@ body {
   height: 72px;
   flex-shrink: 0;
   padding: 0 12%;
-  position: relative;
 }
 
 #navLower__ul__buttons {
@@ -124,6 +123,21 @@ body {
   margin: 0;
   gap: 10px;
   overflow-x: hidden;
+  animation: navigationSlide 1s linear 1;
+}
+
+@keyframes navigationSlide {
+  0% {
+    transform: translateX(1600px);
+  }
+
+  70% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 #navLower__ul__buttons li {
@@ -248,11 +262,23 @@ body {
   display: flex;
   height: 264px;
   padding: 10px 0px;
+  background-color: #008aee;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 #article__searchBar {
@@ -266,7 +292,8 @@ body {
   border-radius: 25px;
   background: #fefefe;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
-  margin: 1px 0px 0px 15px;
+  margin: 1px 0 0 15px;
+  animation: navigationSlide 1.2s linear 1;
 }
 
 #article__searchBar:nth-child(1) svg {
@@ -280,24 +307,21 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 10px;
+  margin-left: 11px;
 }
 
 .form__search {
   width: 100%;
-  margin-top: -6px;
+  margin-top: -5px;
   font-family: "Exo 2", sans-serif;
 }
 
 .form__search input {
   display: flex;
-  padding: 16px 443px 16px 25px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
   border-radius: 25px;
   border: 1px solid #008aee;
-  width: 95%;
   color: #777;
   font-family: "Exo 2", sans-serif;
   font-size: 20px;
@@ -319,8 +343,10 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 3%;
-  width: 14.5%;
+}
+
+#form__search__div__input input {
+  margin-left: -15px;
 }
 
 #article__searchBar:nth-child(2) {
@@ -333,14 +359,11 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin: -1px 0 0 2px;
+  margin: 25px 0 0 -15px;
 }
 
 #div__search___buttons button {
-  display: flex;
   padding: 6px 22px;
-  align-items: flex-start;
-  gap: 10px;
   color: #19242d;
   font-family: "Exo 2", sans-serif;
   font-size: 18px;
@@ -349,11 +372,14 @@ body {
   line-height: normal;
   border-radius: 25px;
   padding: 6px 22px;
+  background-color: transparent;
+  min-width: 10%;
 }
 
 #div__search___buttons button:nth-child(1) {
   background: #008aee;
   color: #fefefe;
+ 
 }
 
 #div__search___buttons button:nth-child(2) {
@@ -379,6 +405,7 @@ body {
 /* CAROUSEL IMAGES SLIDER  */
 #carouselExampleIndicators {
   position: relative;
+  height: 299px;
 }
 
 #carouselExampleIndicators ol {
@@ -397,6 +424,11 @@ body {
 
 .active {
   background-color: #008aee !important;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-item {

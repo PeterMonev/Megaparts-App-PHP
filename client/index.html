@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mega Parts - App</title>
 
-
+    <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet"
+        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- SCROLL MAGIC  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
     <link rel="stylesheet" href="./styles/styles.css">
+    <script type="module" src="./animation.js"></script>
 
 </head>
 
@@ -127,8 +140,8 @@
 
         </nav>
 
-
-        <nav id="lower__nav" class="navbar sticky-top ">
+        <!-- LOWER NAVIGATION BAR -->
+        <nav id="lower__nav" class="sticky-top container-fluid ">
             <ul id="navLower__ul__buttons" class="d-flex">
                 <li>
                     <button>
@@ -253,15 +266,14 @@
                         </div>
                     </button>
                 </li>
+                <div class="nav__lower__arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                        <path
+                            d="M0.288944 12.5739C0.669493 12.9545 1.28654 12.9545 1.66708 12.5739L6.42981 7.80655C7.19031 7.04527 7.19001 5.81176 6.42923 5.05088L1.66357 0.285322C1.28303 -0.095315 0.665984 -0.095315 0.285426 0.285322C-0.0951426 0.665861 -0.0951426 1.28291 0.285426 1.66345L4.36428 5.74228C4.74492 6.12282 4.74482 6.73987 4.36428 7.12041L0.288944 11.1958C-0.0916246 11.5764 -0.0916245 12.1934 0.288944 12.5739Z"
+                            fill="white" />
+                    </svg>
+                </div>
             </ul>
-            <div class="nav__lower__arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                    <path
-                        d="M0.288944 12.5739C0.669493 12.9545 1.28654 12.9545 1.66708 12.5739L6.42981 7.80655C7.19031 7.04527 7.19001 5.81176 6.42923 5.05088L1.66357 0.285322C1.28303 -0.095315 0.665984 -0.095315 0.285426 0.285322C-0.0951426 0.665861 -0.0951426 1.28291 0.285426 1.66345L4.36428 5.74228C4.74492 6.12282 4.74482 6.73987 4.36428 7.12041L0.288944 11.1958C-0.0916246 11.5764 -0.0916245 12.1934 0.288944 12.5739Z"
-                        fill="white" />
-                </svg>
-            </div>
-
         </nav>
 
     </header>
@@ -270,72 +282,76 @@
 
     <main>
         <!-- SEARCH BAR -->
-        <section id="section__searchBar" class="container col-12 bg-primary">
+        <section id="section__searchBar" class="container col-12">
 
             <article id="article__searchBar">
                 <div class="d-flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                        <path d="M16.1588 15.6549L20.5 20M18.5 10C18.5 14.4183 14.9183 18 10.5 18C6.08172 18 2.5 14.4183 2.5 10C2.5 5.58172 6.08172 2 10.5 2C14.9183 2 18.5 5.58172 18.5 10Z" stroke="#19242D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                      <h4>Бързо търсене</h4>
+                        <path
+                            d="M16.1588 15.6549L20.5 20M18.5 10C18.5 14.4183 14.9183 18 10.5 18C6.08172 18 2.5 14.4183 2.5 10C2.5 5.58172 6.08172 2 10.5 2C14.9183 2 18.5 5.58172 18.5 10Z"
+                            stroke="#19242D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4>Бързо търсене</h4>
                 </div>
 
-                <form class="form__search d-flex" action="#">
-                    <input type="text"
-                           placeholder="Търсете на Част, марка, категория, обява или др."
-                           name="search">
-                    <button type="submit" name="input">
-                        Търсене
-                    </button>
+                <form class="form__search d-flex flex-wrap" action="#">
+                    <div id="form__search__div__input" class="d-flex col-12 justify-content-between">
+                        <input type="text" placeholder="Търсете на Част, марка, категория, обява или др." name="search"
+                            class="col-10 d-flex">
+                        <button type="submit" name="input" class="col-2">
+                            Търсене
+                        </button>
+                    </div>
+                    <div id="div__search___buttons" class=" col-12">
+                        <button class="fs-1">
+                            Всичко
+                        </button>
+                        <button>
+                            Авточасти
+                        </button>
+                        <button>
+                            Борса Части
+                        </button>
+                        <button>
+                            Автоборса
+                        </button>
+                        <button>
+                            Продава Коли
+                        </button>
+                        <button>
+                            Продава Части
+                        </button>
+                    </div>
                 </form>
 
-                <div id="div__search___buttons" class="d">
-                    <button>
-                        Всичко
-                    </button>
-                    <button>
-                        Авточасти
-                    </button>
-                    <button>
-                        Борса Части
-                    </button>
-                    <button>
-                        Автоборса
-                    </button>
-                    <button>
-                        Продава Коли
-                    </button>
-                    <button>
-                        Продава Части
-                    </button>
-                </div>
+
             </article>
         </section>
         <!-- CAROUSEL IMAGES SLIDER -->
         <section id="section__carousel__slider">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./styles/assets/CarouselImage1.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./styles/assets/CarouselImage2.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./styles/assets/CarouselImage3.jpg" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./styles/assets/CarouselImage4.jpg" alt="Third slide">
-              </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./styles/assets/CarouselImage1.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./styles/assets/CarouselImage2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./styles/assets/CarouselImage3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./styles/assets/CarouselImage4.jpg" alt="Third slide">
+                    </div>
+                </div>
             </div>
-   
-          </div>
+        </section>
     </main>
 
 
