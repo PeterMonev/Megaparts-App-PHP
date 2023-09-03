@@ -359,7 +359,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin: 25px 0 0 -15px;
+  margin: 24px 0 0 -28px;
 }
 
 #div__search___buttons button {
@@ -379,7 +379,7 @@ body {
 #div__search___buttons button:nth-child(1) {
   background: #008aee;
   color: #fefefe;
- 
+  margin-left: 10px;
 }
 
 #div__search___buttons button:nth-child(2) {
