@@ -1,5 +1,5 @@
 //Sticky Navigation Bar 
-// const lowerNav = document.querySelector("#lower__nav");
+const lowerNav = document.querySelector("#lower__nav");
 
 // function setSticky() {
 //     gsap.set(lowerNav, {
@@ -31,4 +31,7 @@ $("#carouselExampleIndicators").swipe({
     },
     allowPageScroll: "vertical" 
 });
+
+
+// Special Offers Carousel
 
