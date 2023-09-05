@@ -35,3 +35,15 @@ $("#carouselExampleIndicators").swipe({
 
 // Special Offers Carousel
 
+$('#div__specialOffers__offers').flickity({
+    pageDots: false,
+    cellAlign: 'left',
+    contain: true,
+    draggable: false,
+    freeScroll: false,
+    wrapAround: false,
+  });
+
+  
+
+  

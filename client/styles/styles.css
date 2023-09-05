@@ -578,7 +578,6 @@ body {
 }
 
 #section__specialOffers div:nth-child(2) {
-  overflow: hidden;
 }
 
 #div__specialOffers {
@@ -601,14 +600,15 @@ body {
   line-height: normal;
 }
 
-#diV__specialOffers__offers {
+#div__specialOffers__offers {
   gap: 32px;
+  height: 100%;
+  z-index: 1;
 }
 
 #ariticle__specialOffers__offer {
-  color: #19242D;
-font-size: 14.608px;
-
+  color: #19242d;
+  font-size: 14.608px;
 }
 
 #p__specialOffers__description {
@@ -628,15 +628,64 @@ font-size: 14.608px;
   line-height: normal;
 }
 
-
 #div__specialOffers__categoryAndPrice p:nth-child(2) {
-  color: #5FB865;
+  color: #5fb865;
   font-size: 18.782px;
   margin-top: -4px;
+  padding-right: 12px !important;
 }
 
-.button__specialOffers__more {
+.carousel-cell {
+  margin-right: 19px !important;
+  width: 33% !important;
+  height: 100% !important;
+}
+
+.flickity-button.next {
+  background-image: url("path-to-your-next-icon.svg");
+  color: #008aee;
   position: absolute;
-  right: 0px;
+  border: none;
+  height: 100%;
+  width: 25%;
+  border-radius: 0;
+  right: 0;
+  background: rgb(237, 237, 237);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
+.flickity-button.previous {
+  background-image: url("path-to-your-next-icon.svg");
+  color: #008aee;
+  position: absolute;
+  border: none;
+  height: 100%;
+  width: 20%;
+  border-radius: 0;
+  position: absolute;
+  left: -1%;
+  background: rgb(255,255,255);
+  background: linear-gradient(270deg, rgba(255,255,255,0.09296218487394958) 0%, rgba(255,255,255,1) 100%);
+}
+
+.flickity-button.previous svg {
+  width: 25px !important;
+  height: 25px !important;
+  top: 35.5%;
+  left: 0%;
+}
+
+.flickity-button.next svg {
+  width: 25px !important;
+  height: 25px !important;
+  top: 36.5%;
+  left: 98%;
+}
+
+.flickity-button:disabled {
+  display: none;
+}
