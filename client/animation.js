@@ -157,3 +157,53 @@ gsap.from("#article__infoBlocks__fourth", {
     toggleActions: "play none none none",
   }
 })
+
+// Small Info Block
+
+// First Block
+
+gsap.from("#article__smallInfoBlocks__first", {
+  x: "-290%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  }
+})
+
+// Second Block
+
+gsap.from("#article__smallInfoBlocks__second", {
+  x: "-290%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  }
+})
+
+// Third Block
+
+gsap.from("#article__smallInfoBlocks__third", {
+  x: "300%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  }
+})
+
+// Fourth Block
+
+gsap.from("#article__smallInfoBlocks__fourth", {
+  x: "300%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  }
+})
