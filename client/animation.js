@@ -107,3 +107,53 @@ gsap.from("#div__lastOffers", {
     toggleActions: "play none none none",
   }
 })
+
+// Info Blocks
+
+// First Block
+
+gsap.from("#article__infoBlocks__first", {
+  x: "-290%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  }
+})
+
+// Second Block
+
+gsap.from("#article__infoBlocks__second", {
+  x: "-290%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  }
+})
+
+// Third Block
+
+gsap.from("#article__infoBlocks__third", {
+  x: "300%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  }
+})
+
+// Fourth Block
+
+gsap.from("#article__infoBlocks__fourth", {
+  x: "300%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  }
+})

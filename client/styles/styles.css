@@ -908,7 +908,7 @@ body {
 }
 
 #section__infoBlocks article:nth-child(2) button {
-  margin-bottom: -20px;
+  margin-bottom: -21px;
   color: #DC5426;;
 }
 
@@ -992,5 +992,9 @@ line-height: normal;
 
 #section__infoBlocks button svg {
   margin: 5px 0 0 10px;
+}
+
+#section__infoBlocks  a svg {
+  margin: 0 0 0 2px;
 }
 
