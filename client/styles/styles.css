@@ -1,5 +1,5 @@
 /* FONT-STYLES */
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* RESET */
 
 *,
@@ -757,7 +757,7 @@ body {
 }
 
 #article__lastOffers__main button svg path {
-  fill: #5FB865;
+  fill: #5fb865;
 }
 
 #article__lastOffers__main button svg {
@@ -772,6 +772,7 @@ body {
   font-weight: 700;
   line-height: normal;
   position: relative;
+  overflow: hidden;
 }
 
 #div__lastOffers h6 {
@@ -828,6 +829,168 @@ body {
 /* Info Blocks */
 
 #section__infoBlocks {
+  margin: 3% 0 0 1.7%;
+  padding: 0 10%;
+  gap: 32px;
   height: 100vh;
-  background-color: salmon;
 }
+
+#section__infoBlocks article {
+  display: flex;
+  width: 271px;
+  height: 271px;
+  padding: 25px 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#section__infoBlocks article h3 {
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: -24px;
+}
+
+#section__infoBlocks article:nth-child(4) h3 {
+  margin-top: -33px;
+}
+
+#section__infoBlocks article p {
+  align-self: stretch;
+  color: #ededed;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+#section__infoBlocks article:nth-child(1) {
+  background: #63c7c9;
+}
+
+#section__infoBlocks article:nth-child(1) h3 {
+  margin-top: -30px;
+}
+
+#section__infoBlocks article:nth-child(1) p {
+  margin-bottom: 3px;
+}
+
+#section__infoBlocks article:nth-child(1) button {
+  color: #63c7c9;;
+}
+
+#section__infoBlocks article:nth-child(1) button svg path{
+  fill:  #63c7c9;;
+}
+
+
+#section__infoBlocks article:nth-child(2) {
+  background: #dc5426;
+}
+
+#section__infoBlocks article:nth-child(2) h3 {
+  margin-top: -24px;
+}
+
+#section__infoBlocks article:nth-child(2) p {
+  margin-bottom: 2px;
+}
+
+#section__infoBlocks article:nth-child(2) button {
+  margin-bottom: -20px;
+  color: #DC5426;;
+}
+
+#section__infoBlocks article:nth-child(2) button svg path{
+  fill: #DC5426;
+}
+
+#section__infoBlocks article:nth-child(3) {
+  background: #e59d48;
+}
+
+
+#section__infoBlocks article:nth-child(3) h3 {
+  margin-top: -24px;
+}
+
+#section__infoBlocks article:nth-child(3) p {
+  margin-bottom: 2px;
+}
+
+#section__infoBlocks article:nth-child(3) button {
+  margin-bottom: -22px;
+  color: #E59D48;
+}
+
+#section__infoBlocks article:nth-child(3) button svg path{
+  fill: #E59D48;
+}
+
+#section__infoBlocks article:nth-child(4) {
+  background: #bd5fe9;
+}
+
+#section__infoBlocks article:nth-child(4) p {
+  margin-bottom: 7px;
+}
+
+#section__infoBlocks article:nth-child(4) button {
+  color: #bd5fe9;
+}
+
+#section__infoBlocks article:nth-child(4) button svg path{
+  fill: #bd5fe9;
+}
+
+.infoBlocks__p {
+  width: 62%;
+}
+
+.infoBlocks__p span {
+  color: #EDEDED;
+  font-family: "Roboto", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+#section__infoBlocks article a {
+  margin: 0 -5px -23px 0px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#section__infoBlocks button {
+  padding: 5px 15px;
+  border-radius: 25px;
+  background: #fff;
+  color: #008aee;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: -1px;
+}
+
+#section__infoBlocks button svg {
+  margin: 5px 0 0 10px;
+}
+

@@ -94,7 +94,6 @@ gsap.from("#article__lastOffers__main", {
     trigger: "#section__infoBlocks",
     start: "top bottom",
     toggleActions: "play none none none",
-    markers: true
   },
 });
 
@@ -106,6 +105,5 @@ gsap.from("#div__lastOffers", {
     trigger:  "#section__infoBlocks",
     start: "top bottom",
     toggleActions: "play none none none",
-    markers: true
   }
 })
