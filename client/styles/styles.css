@@ -1,6 +1,5 @@
 /* FONT-STYLES */
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* RESET */
 
 *,
@@ -26,7 +25,6 @@ ul {
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 200vh;
 }
 
 /* HEADER */
@@ -577,9 +575,6 @@ body {
   margin: 5px 0 0 10px;
 }
 
-#section__specialOffers div:nth-child(2) {
-}
-
 #div__specialOffers {
   width: 100%;
   margin: -7px 0 0 2.8%;
@@ -609,6 +604,11 @@ body {
 #ariticle__specialOffers__offer {
   color: #19242d;
   font-size: 14.608px;
+}
+
+.div__offer__img {
+  border-radius: 15.651px;
+  border: 2px solid #008aee;
 }
 
 #p__specialOffers__description {
@@ -649,6 +649,7 @@ body {
   height: 80%;
   width: 25%;
   border-radius: 0;
+  top: 40%;
   right: 0;
   background: rgb(237, 237, 237);
   background: linear-gradient(
@@ -656,7 +657,6 @@ body {
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-
 }
 
 .flickity-button.previous {
@@ -669,8 +669,12 @@ body {
   border-radius: 0;
   position: absolute;
   left: -1%;
-  background: rgb(255,255,255);
-  background: linear-gradient(270deg, rgba(255,255,255,0.09296218487394958) 0%, rgba(255,255,255,1) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.09296218487394958) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   top: 40%;
 }
 
@@ -684,7 +688,7 @@ body {
 .flickity-button.next svg {
   width: 25px !important;
   height: 25px !important;
-  top: 36.5%;
+  top: 46%;
   left: 98%;
 }
 
@@ -695,6 +699,127 @@ body {
 /* LAST OFFERS */
 
 #section__lastOffers {
-  height: 100vh;
-  background-color: salmon;
+  margin: 3.3% 0 0 0;
+  padding: 0 10%;
+}
+
+#article__lastOffers__main {
+  display: flex;
+  width: 22.4%;
+  height: 271px;
+  padding: 25px 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #5fb865;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  text-align: center;
+  margin-right: 9px;
+  z-index: 1;
+}
+
+#article__lastOffers__main h3 {
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 0 30px 2px;
+}
+
+#article__lastOffers__main p {
+  color: #ededed;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 39px;
+}
+
+#article__lastOffers__main button {
+  padding: 5px 15px;
+  border-radius: 25px;
+  background: #fff;
+  color: #5fb865;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+#article__lastOffers__main button svg path {
+  fill: #5FB865;
+}
+
+#article__lastOffers__main button svg {
+  margin: 5px 0 0 10px;
+}
+
+#div__lastOffers {
+  width: 100%;
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+}
+
+#div__lastOffers h6 {
+  color: #19242d;
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px 0 0px 25px;
+}
+#div__lastOffers__offers {
+  height: 100%;
+  width: 102%;
+  margin: 13px 0 0 25px;
+  z-index: 1;
+}
+
+#ariticle__lastOffers__offer {
+  color: #19242d;
+  font-size: 14.608px;
+  display: flex;
+  width: 30% !important;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.div__lastOffer__img {
+  border-radius: 15.651px;
+  width: 100%;
+  margin-right: 0 !important;
+}
+
+#div__lastOffers__description {
+  padding-top: 5px;
+  color: #19242d;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#div__lastOffers__description p span {
+  color: #5fb865;
+  font-family: "Roboto", sans-serif;
+  align-self: stretch;
+}
+
+#div__lastOffers__offers article:nth-child(3) {
+  margin: 0 0 0 -3px;
 }

@@ -1,4 +1,4 @@
-//Sticky Navigation Bar 
+//Sticky Navigation Bar
 const lowerNav = document.querySelector("#lower__nav");
 
 // function setSticky() {
@@ -24,25 +24,25 @@ const lowerNav = document.querySelector("#lower__nav");
 
 // Carousel Banner Images
 $("#carouselExampleIndicators").swipe({
-    swipe: function (event, direction) {
-        console.log(direction);
-        if (direction == 'left') $(this).carousel('next');
-        if (direction == 'right') $(this).carousel('prev');
-    },
-    allowPageScroll: "vertical" 
+  swipe: function (event, direction) {
+    console.log(direction);
+    if (direction == "left") $(this).carousel("next");
+    if (direction == "right") $(this).carousel("prev");
+  },
+  allowPageScroll: "vertical",
 });
-
 
 // Special Offers Carousel
 
-$('#div__specialOffers__offers').flickity({
-    pageDots: false,
-    cellAlign: 'left',
-    contain: true,
-    draggable: false,
-    freeScroll: false,
-    wrapAround: false,
-  });
+$("#div__specialOffers__offers").flickity({
+  pageDots: false,
+  cellAlign: "left",
+  contain: true,
+  draggable: false,
+  freeScroll: false,
+  wrapAround: false,
+  
+});
 
 // Special Offers Sliders
 
@@ -50,11 +50,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Left Article
 gsap.from("#article__specialOffers__main", {
-  x: "-170%", 
+  x: "-170%",
   duration: 1,
   scrollTrigger: {
-    trigger: "#section__specialOffers", 
-    start: "bottom bottom", 
+    trigger: "#section__specialOffers",
+    start: "bottom bottom",
     toggleActions: "play none none none",
   },
 });
@@ -62,13 +62,24 @@ gsap.from("#article__specialOffers__main", {
 // Rigth Article
 gsap.from("#div__specialOffers", {
   x: "170%",
-  duration: 1, 
+  duration: 1,
   scrollTrigger: {
-    trigger: "#section__specialOffers", 
-    start: "bottom bottom", 
-    end: "center center", 
-    toggleActions: "play none none none"
+    trigger: "#section__specialOffers",
+    start: "bottom bottom",
+    end: "center center",
+    toggleActions: "play none none none",
   },
 });
 
-  
+// Last Offers Carousel
+$("#div__lastOffers__offers").flickity({
+  pageDots: false,
+  cellAlign: "left",
+  contain: true,
+  draggable: false,
+  freeScroll: false,
+  wrapAround: false,
+  autoPlay: false,
+  pauseAutoPlayOnHover: false,
+  prevNextButtons: false,
+});
