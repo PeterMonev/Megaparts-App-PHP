@@ -832,7 +832,6 @@ body {
   margin: 3% 0 0 1.7%;
   padding: 0 10%;
   gap: 32px;
-  height: 100vh;
 }
 
 #section__infoBlocks article {
@@ -887,13 +886,12 @@ body {
 }
 
 #section__infoBlocks article:nth-child(1) button {
-  color: #63c7c9;;
+  color: #63c7c9;
 }
 
-#section__infoBlocks article:nth-child(1) button svg path{
-  fill:  #63c7c9;;
+#section__infoBlocks article:nth-child(1) button svg path {
+  fill: #63c7c9;
 }
-
 
 #section__infoBlocks article:nth-child(2) {
   background: #dc5426;
@@ -909,17 +907,16 @@ body {
 
 #section__infoBlocks article:nth-child(2) button {
   margin-bottom: -21px;
-  color: #DC5426;;
+  color: #dc5426;
 }
 
-#section__infoBlocks article:nth-child(2) button svg path{
-  fill: #DC5426;
+#section__infoBlocks article:nth-child(2) button svg path {
+  fill: #dc5426;
 }
 
 #section__infoBlocks article:nth-child(3) {
   background: #e59d48;
 }
-
 
 #section__infoBlocks article:nth-child(3) h3 {
   margin-top: -24px;
@@ -931,11 +928,11 @@ body {
 
 #section__infoBlocks article:nth-child(3) button {
   margin-bottom: -22px;
-  color: #E59D48;
+  color: #e59d48;
 }
 
-#section__infoBlocks article:nth-child(3) button svg path{
-  fill: #E59D48;
+#section__infoBlocks article:nth-child(3) button svg path {
+  fill: #e59d48;
 }
 
 #section__infoBlocks article:nth-child(4) {
@@ -950,7 +947,7 @@ body {
   color: #bd5fe9;
 }
 
-#section__infoBlocks article:nth-child(4) button svg path{
+#section__infoBlocks article:nth-child(4) button svg path {
   fill: #bd5fe9;
 }
 
@@ -959,12 +956,12 @@ body {
 }
 
 .infoBlocks__p span {
-  color: #EDEDED;
+  color: #ededed;
   font-family: "Roboto", sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
 
 #section__infoBlocks article a {
@@ -994,7 +991,109 @@ line-height: normal;
   margin: 5px 0 0 10px;
 }
 
-#section__infoBlocks  a svg {
+#section__infoBlocks a svg {
   margin: 0 0 0 2px;
+}
+
+/* Small Info Blocks */
+
+#section__smallInfoBlocks {
+  margin: 2.2% 0 0 1.7%;
+  padding: 0 10%;
+  gap: 32px;
+  height: 100vh;
+}
+
+#section__smallInfoBlocks article {
+  display: flex;
+  width: 271px;
+  height: 82px;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+#section__smallInfoBlocks article h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#section__smallInfoBlocks article p {
+  color: #999;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: -50px;
+  margin: -8px;
+}
+
+.span__smallInfoBlocks__mega {
+  color: #999;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+#section__smallInfoBlocks article div:nth-child(1) {
+ gap: 10px;
+ margin: 2px 0px 0 0;
+}
+
+/* First */
+#section__smallInfoBlocks article:nth-child(1) {
+  border: 2px solid #dc5426;
+}
+
+#section__smallInfoBlocks article:nth-child(1) div:nth-child(1) span  {
+  margin: -4px 0 0 0 ;
+  color: #DC5426;
+}
+
+/* Second */
+
+#section__smallInfoBlocks article:nth-child(2) {
+  border: 2px solid #5fb865;
+}
+
+#section__smallInfoBlocks article:nth-child(2) div:nth-child(1) span  {
+  margin: -4px 0 0 0 ;
+  color: #5FB865;
+}
+
+
+/* Third */
+
+#section__smallInfoBlocks article:nth-child(3) {
+  border: 2px solid #008aee;
+}
+
+#section__smallInfoBlocks article:nth-child(3) div:nth-child(1) span  {
+  margin: -4px 0 0 0 ;
+  color: #008AEE;
+}
+
+/* Fourth */
+
+#section__smallInfoBlocks article:nth-child(4) {
+  border: 2px solid #0043ee;
+}
+
+#section__smallInfoBlocks article:nth-child(4) div:nth-child(1) span  {
+  margin: -4px 0 0 0 ;
+  color: #0043EE;
 }
 
