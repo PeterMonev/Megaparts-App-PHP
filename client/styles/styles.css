@@ -25,6 +25,7 @@ ul {
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -822,4 +823,11 @@ body {
 
 #div__lastOffers__offers article:nth-child(3) {
   margin: 0 0 0 -3px;
+}
+
+/* Info Blocks */
+
+#section__infoBlocks {
+  height: 100vh;
+  background-color: salmon;
 }

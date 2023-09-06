@@ -50,7 +50,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Left Article
 gsap.from("#article__specialOffers__main", {
-  x: "-170%",
+  x: "-165%",
   duration: 1,
   scrollTrigger: {
     trigger: "#section__specialOffers",
@@ -61,7 +61,7 @@ gsap.from("#article__specialOffers__main", {
 
 // Rigth Article
 gsap.from("#div__specialOffers", {
-  x: "170%",
+  x: "125%",
   duration: 1,
   scrollTrigger: {
     trigger: "#section__specialOffers",
@@ -83,3 +83,29 @@ $("#div__lastOffers__offers").flickity({
   pauseAutoPlayOnHover: false,
   prevNextButtons: false,
 });
+
+// Last Offers Sliders
+
+// Left Articles
+gsap.from("#article__lastOffers__main", {
+  x: "170%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+    markers: true
+  },
+});
+
+// Rigth Articles 
+gsap.from("#div__lastOffers", {
+  x: "-125%",
+  duration: 1,
+  scrollTrigger: {
+    trigger:  "#section__infoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+    markers: true
+  }
+})
