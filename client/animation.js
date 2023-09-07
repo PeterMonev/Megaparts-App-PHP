@@ -264,15 +264,3 @@ resizeCells();
 $imagesCarousel.on('scroll.flickity', function() {
   resizeCells();
 });
-
-
-$carousel.on('select.flickity', function() {
-    // Премахнете класа от всички елементи
-    $('.carouselOfImages .carouselImage').removeClass('third-after-selected');
-
-    var flkty = $(this).data('flickity');
-    var $thirdElementIndex = (flkty.selectedIndex + 3) % flkty.cells.length;
-
-    // Добавете класа към третия елемент след избрания
-    $(flkty.cells[$thirdElementIndex].element).addClass('third-after-selected');
-});
