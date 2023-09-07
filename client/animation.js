@@ -207,3 +207,72 @@ gsap.from("#article__smallInfoBlocks__fourth", {
     toggleActions: "play none none none",
   }
 })
+
+// Comments Carousel
+
+const $imagesCarousel = jQuery('.carouselOfImages').flickity({
+
+  accessibility: false,
+  autoPlay: false,
+  pauseAutoPlayOnHover: false,
+  cellAlign: 'center',
+  contain: false,
+  draggable: true,
+  friction: 0.2,
+  initialIndex: 0,
+  lazyLoad: false,
+  percentPosition: true,
+  prevNextButtons: true,
+  pageDots: false,
+  resize: true,
+  rightToLeft: false,
+  setGallerySize: true,
+  watchCSS: false,
+  wrapAround: true
+
+});
+
+function resizeCells() {
+  var flkty = $imagesCarousel.data('flickity');
+  var $current = flkty.selectedIndex;
+  var $length = flkty.cells.length;
+  var $imageNumLimit = 5;
+  if ($length < $imageNumLimit) {
+    $imagesCarousel.flickity('destroy');
+  }
+  jQuery('.carouselOfImages .carouselComment').removeClass("nextToSelectedLeft");
+  jQuery('.carouselOfImages .carouselComment').removeClass("nextToSelectedRight");
+  jQuery('.carouselOfImages .carouselComment').removeClass("nextToSelectedLeft2");
+  jQuery('.carouselOfImages .carouselComment').removeClass("nextToSelectedRight2");
+  jQuery('.carouselOfImages .carouselComment').eq($current - 1).addClass("nextToSelectedLeft");
+  jQuery('.carouselOfImages .carouselComment').eq($current - 2).addClass("nextToSelectedLeft2");
+  var $endCell;
+  if ($current + 1 == $length) {
+    $endCell = "0";
+  } else {
+    $endCell = $current + 1;
+  }
+  jQuery('.carouselOfImages .carouselComment').eq($endCell).addClass("nextToSelectedRight");
+  if($endCell + 1 < $imageNumLimit){
+    jQuery('.carouselOfImages .carouselComment').eq($endCell + 1).addClass("nextToSelectedRight2"); 
+  } else {
+    jQuery('.carouselOfImages .carouselComment').eq(0).addClass("nextToSelectedRight2");
+  }
+}
+resizeCells();
+
+$imagesCarousel.on('scroll.flickity', function() {
+  resizeCells();
+});
+
+
+$carousel.on('select.flickity', function() {
+    // Премахнете класа от всички елементи
+    $('.carouselOfImages .carouselImage').removeClass('third-after-selected');
+
+    var flkty = $(this).data('flickity');
+    var $thirdElementIndex = (flkty.selectedIndex + 3) % flkty.cells.length;
+
+    // Добавете класа към третия елемент след избрания
+    $(flkty.cells[$thirdElementIndex].element).addClass('third-after-selected');
+});
