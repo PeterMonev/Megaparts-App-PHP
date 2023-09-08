@@ -1,6 +1,8 @@
 //Sticky Navigation Bar
 const lowerNav = document.querySelector("#lower__nav");
 
+// COMMENT THIS FUCNTION FOR PIXEL PERFECT! 
+
 // function setSticky() {
 //     gsap.set(lowerNav, {
 //         position: "fixed",
@@ -116,7 +118,7 @@ gsap.from("#article__infoBlocks__first", {
   x: "-290%",
   duration: 1,
   scrollTrigger: {
-    trigger:  "#section__infoBlocks",
+    trigger:  "#section__smallInfoBlocks",
     start: "top bottom",
     toggleActions: "play none none none",
   }
@@ -128,7 +130,7 @@ gsap.from("#article__infoBlocks__second", {
   x: "-290%",
   duration: 1,
   scrollTrigger: {
-    trigger:  "#section__infoBlocks",
+    trigger:  "#section__smallInfoBlocks",
     start: "top bottom",
     toggleActions: "play none none none",
   }
@@ -140,7 +142,7 @@ gsap.from("#article__infoBlocks__third", {
   x: "300%",
   duration: 1,
   scrollTrigger: {
-    trigger:  "#section__infoBlocks",
+    trigger:  "#section__smallInfoBlocks",
     start: "top bottom",
     toggleActions: "play none none none",
   }
@@ -152,7 +154,7 @@ gsap.from("#article__infoBlocks__fourth", {
   x: "300%",
   duration: 1,
   scrollTrigger: {
-    trigger:  "#section__infoBlocks",
+    trigger:  "#section__smallInfoBlocks",
     start: "top bottom",
     toggleActions: "play none none none",
   }
@@ -166,7 +168,7 @@ gsap.from("#article__smallInfoBlocks__first", {
   x: "-290%",
   duration: 1,
   scrollTrigger: {
-    trigger:  "#section__infoBlocks",
+    trigger:  ".section__comments",
     start: "top bottom",
     toggleActions: "play none none none",
   }
@@ -178,7 +180,7 @@ gsap.from("#article__smallInfoBlocks__second", {
   x: "-290%",
   duration: 1,
   scrollTrigger: {
-    trigger:  "#section__infoBlocks",
+    trigger:  ".section__comments",
     start: "top bottom",
     toggleActions: "play none none none",
   }
@@ -190,7 +192,7 @@ gsap.from("#article__smallInfoBlocks__third", {
   x: "300%",
   duration: 1,
   scrollTrigger: {
-    trigger:  "#section__infoBlocks",
+    trigger:  ".section__comments",
     start: "top bottom",
     toggleActions: "play none none none",
   }
@@ -202,7 +204,7 @@ gsap.from("#article__smallInfoBlocks__fourth", {
   x: "300%",
   duration: 1,
   scrollTrigger: {
-    trigger:  "#section__infoBlocks",
+    trigger:  ".section__comments",
     start: "top bottom",
     toggleActions: "play none none none",
   }
@@ -264,3 +266,4 @@ resizeCells();
 $imagesCarousel.on('scroll.flickity', function() {
   resizeCells();
 });
+
