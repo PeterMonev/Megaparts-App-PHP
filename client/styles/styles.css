@@ -119,7 +119,7 @@ body {
   height: 100%;
   align-items: center;
   margin: 0;
-  gap: 10px;
+  gap: 10px !important;
   overflow-x: hidden;
   animation: navigationSlide 0.5s ease-out 1;
   transition: navigatiaonSlide 3s;
@@ -177,6 +177,7 @@ body {
 #navLower__ul__buttons li:nth-child(2) button {
   padding: 5px 15px;
   background: #008aee;
+  margin-left: 5% !important;
 }
 
 #navLower__ul__buttons li:nth-child(2) button div svg {
@@ -186,8 +187,7 @@ body {
 #navLower__ul__buttons li:nth-child(3) button {
   border-radius: 25px;
   background: #5fb865;
-
-  margin-left: -2px;
+  margin-left: 10% !important;
 }
 
 #navLower__ul__buttons li:nth-child(3) button div svg {
@@ -197,6 +197,7 @@ body {
 #navLower__ul__buttons li:nth-child(4) button {
   border-radius: 25px;
   background: #63c7c9;
+  margin-left: 17% !important;
 }
 
 #navLower__ul__buttons li:nth-child(4) button div svg {
@@ -206,7 +207,7 @@ body {
 #navLower__ul__buttons li:nth-child(5) button {
   border-radius: 25px;
   background: #dc5426;
-  margin-left: -1px;
+  margin-left: 19% !important;
 }
 
 #navLower__ul__buttons li:nth-child(5) button div svg {
@@ -216,7 +217,7 @@ body {
 #navLower__ul__buttons li:nth-child(6) button {
   border-radius: 25px;
   background: #e59d48;
-  margin-left: -1px;
+  margin-left: 22% !important;
 }
 
 #navLower__ul__buttons li:nth-child(6) button div svg {
@@ -226,6 +227,7 @@ body {
 #navLower__ul__buttons li:nth-child(7) button {
   border-radius: 25px;
   background: #bd5fe9;
+  margin-left: 50% !important;
 }
 
 #navLower__ul__buttons li:nth-child(7) button div svg {
@@ -236,7 +238,7 @@ body {
   border-radius: 25px;
   border: 1.5px solid #dc5426;
   background-color: transparent;
-  margin-left: -2px;
+  margin-left: 32% !important;
 }
 
 #navLower__ul__buttons li:nth-child(8) button div svg {
@@ -246,6 +248,45 @@ body {
 .nav__lower__arrow {
   position: absolute;
   right: 11%;
+}
+
+#navLower__ul__buttons > button.flickity-button.flickity-prev-next-button.next > svg {
+  left: 80%;
+  top: 50%;
+  width: 17.86px !important;
+  height: 15px !important;
+
+}
+
+#navLower__ul__buttons > button.flickity-button.flickity-prev-next-button.previous > svg {
+  width: 17.86px !important;
+  height: 15px !important;
+  left: 15%;
+}
+
+#navLower__ul__buttons > button.flickity-button.flickity-prev-next-button.previous {
+  color: white;
+  background: rgb(32,45,57);
+  background: linear-gradient(94deg, rgba(32,45,57,1) 0%, rgba(251,251,251,0) 100%)!important;
+  width: 10%;
+}
+
+#navLower__ul__buttons > button.flickity-button.flickity-prev-next-button.next {
+  color: white;
+  background: rgb(32,45,57);
+background: linear-gradient(260deg, rgba(32,45,57,1) 0%, rgba(251,251,251,0) 100%)!important;
+width: 10%;
+
+}
+
+.pointer {
+  width: 21.245px;
+  height: 14.279px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* SEARCH BAR */
@@ -261,6 +302,7 @@ body {
   gap: 10px;
   flex-shrink: 0;
   animation: fadeIn 1.2s forwards;
+  transition: background-color 1s;
 }
 
 @keyframes fadeIn {

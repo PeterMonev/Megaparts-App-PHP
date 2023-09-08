@@ -152,8 +152,9 @@
 
         <!-- LOWER NAVIGATION BAR -->
         <nav id="lower__nav" class="sticky-top container-fluid ">
-            <ul id="navLower__ul__buttons" class="d-flex">
-                <li>
+            <ul id="navLower__ul__buttons" class="carousel-ul js-flickity"
+                    data-flickity-options='{ "wrapAround": false }'>
+                <li class="carousel-li">
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
                             <path
@@ -161,8 +162,13 @@
                                 fill="white" />
                         </svg>
                     </button>
+                    <div class="pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11" viewBox="0 0 17 11" fill="none">
+                            <path d="M7.81327 0.941857C8.23888 0.446402 9.00581 0.446401 9.43142 0.941856L16.3083 8.94738C16.9024 9.63902 16.411 10.709 15.4992 10.709H1.74545C0.833657 10.709 0.342243 9.63902 0.936378 8.94738L7.81327 0.941857Z" fill="#008AEE"/>
+                          </svg>
+                    </div>
                 </li>
-                <li>
+                <li class="carousel-li">
                     <button>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
@@ -177,7 +183,7 @@
                         </div>
                     </button>
                 </li>
-                <li>
+                <li class="carousel-li">
                     <button>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
@@ -195,7 +201,7 @@
                         </div>
                     </button>
                 </li>
-                <li>
+                <li class="carousel-li">
                     <button>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
@@ -210,7 +216,7 @@
                         </div>
                     </button>
                 </li>
-                <li>
+                <li class="carousel-li">
                     <button>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
@@ -228,7 +234,7 @@
                         </div>
                     </button>
                 </li>
-                <li>
+                <li class="carousel-li">
                     <button>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
@@ -243,7 +249,7 @@
                         </div>
                     </button>
                 </li>
-                <li>
+                <li class="carousel-li">
                     <button>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
@@ -258,7 +264,7 @@
                         </div>
                     </button>
                 </li>
-                <li>
+                <li class="carousel-li">
                     <button>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
@@ -276,14 +282,9 @@
                         </div>
                     </button>
                 </li>
-                <div class="nav__lower__arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                        <path
-                            d="M0.288944 12.5739C0.669493 12.9545 1.28654 12.9545 1.66708 12.5739L6.42981 7.80655C7.19031 7.04527 7.19001 5.81176 6.42923 5.05088L1.66357 0.285322C1.28303 -0.095315 0.665984 -0.095315 0.285426 0.285322C-0.0951426 0.665861 -0.0951426 1.28291 0.285426 1.66345L4.36428 5.74228C4.74492 6.12282 4.74482 6.73987 4.36428 7.12041L0.288944 11.1958C-0.0916246 11.5764 -0.0916245 12.1934 0.288944 12.5739Z"
-                            fill="white" />
-                    </svg>
-                </div>
             </ul>
+
+        
         </nav>
 
     </header>
