@@ -386,6 +386,11 @@ width: 10%;
   line-height: normal;
 }
 
+.search__button__responsive {
+  display: none !important;
+}
+ 
+
 #form__search__div__input {
   min-width: 102%;
 }
