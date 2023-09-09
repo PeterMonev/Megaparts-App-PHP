@@ -172,6 +172,16 @@
 /* RESPONSIVE AT 870px Width */
 @media all and (max-width: 870px) {
 
+  .carousel-cell {
+    width: 58% !important ;
+
+  }
+
+  #ariticle__lastOffers__offer{
+    width: 54% !important ;
+  }
+
+
 
   .carouselComment.is-selected {
     margin: 1% 0 0 20%;
@@ -188,9 +198,20 @@
   }
 }
 
-/* RESPONSIVE AT 770px Width */
-@media all and (max-width: 770px) {
+/* RESPONSIVE AT 768px Width */
+@media all and (max-width: 768px) {
+   #nav__div__img__logo img {
+    border: none;
+   }
 
+   #nav__info {
+    margin: 10px auto;
+    display: none ;
+    }
+
+   .responsive__menu_btn {
+    display: inline-block;
+   }
 
   .carouselComment.is-selected {
     margin: 1% 0 0 20%;

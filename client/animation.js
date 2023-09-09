@@ -58,6 +58,19 @@ const flkty = new Flickity( elem, {
   groupCells: true
 });
 
+// Toggle Button for responsive menu
+
+  $(".responsive__menu_btn").click(function() {
+    if ($("#nav__info").is(':hidden')) {
+      $("#nav__info").show().addClass("d-flex");
+  } else {
+    $("#nav__info").hide().removeClass("d-flex")
+  }
+      
+  });
+
+
+
 // Carousel Banner Images
 $("#carouselExampleIndicators").swipe({
   swipe: function (event, direction) {

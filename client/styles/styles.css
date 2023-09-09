@@ -53,7 +53,13 @@ body {
 }
 
 #nav__info {
+  display: flex;
+  flex-direction: row;
   gap: 25px;
+}
+
+.responsive__menu_btn  {
+  display: none;
 }
 
 #nav__div__icons {
