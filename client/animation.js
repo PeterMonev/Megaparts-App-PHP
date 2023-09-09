@@ -33,7 +33,7 @@ $(document).ready(function() {
       $('.pointer').remove();
 
       const pointerDiv = $(`
-          <div class="pointer">
+          <div class="pointer" style="display: none;">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11" viewBox="0 0 17 11" fill="none">
                   <path d="M7.81327 0.941857C8.23888 0.446402 9.00581 0.446401 9.43142 0.941856L16.3083 8.94738C16.9024 9.63902 16.411 10.709 15.4992 10.709H1.74545C0.833657 10.709 0.342243 9.63902 0.936378 8.94738L7.81327 0.941857Z" fill="${buttonColor}"/>
               </svg>
@@ -41,9 +41,9 @@ $(document).ready(function() {
       `);
 
       $(this).closest('.carousel-li').append(pointerDiv);
+      pointerDiv.fadeIn(500);
   });
 });
-
 
 
 
