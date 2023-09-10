@@ -163,7 +163,7 @@ gsap.from("#div__lastOffers", {
 
 // Info Blocks
 let windowWidth = window.innerWidth;
-
+console.log(windowWidth);
 // First Block
 
 gsap.from("#article__infoBlocks__first", {
