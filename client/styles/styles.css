@@ -1394,6 +1394,13 @@ width: 10%;
 .icon__btn:hover .div__map__wrench {
   left: 4.1%;
 }
+.icon__info svg{
+  display: none;
+}
+
+.icon__info__varna svg{
+display: none;
+}
 
 .sofiaLocation {
   position: absolute;
