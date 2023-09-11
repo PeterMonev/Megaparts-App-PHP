@@ -991,14 +991,11 @@
   }
 
   .icon {
-    
     height: 120%;
     flex-shrink: 0;
   }
 
-
   .icon svg {
-    
     width: 65px;
     height: 75px;
   }
@@ -1062,13 +1059,7 @@
     display: none;
   }
 
-  .icon__info__varna{
-    top: 20%;
-    
-    width: 12%;
-    
-    height: 22%;
-  }
+  
 
   .icon__info__varna i{
     
@@ -1078,14 +1069,82 @@
   .icon__info__varna svg{
     display: inline;
    transform: rotate(180deg);
-   position: absolute;
-   top: 35%;
-   left:7%;
-    background-color: red;
+   margin: 1% 13% 0 -17%;
   }
   
   .div__info__p__varna p:nth-child(2){
     display: none;
+  }
+
+  .div__info__p__varna p:nth-child(1){
+    margin-left: -10%;
+  }
+  
+  
+  .icon__btn__varna  {
+    height: 42px;
+    right: 4%;
+    top:7%
+  /* overflow: visible; */
+  }
+
+  .icon__info__varna{
+    top: 2%;
+    height: 90%;
+    /* width: 40%; */
+   
+    margin: 0% -85% 0 30%;
+    
+  }
+
+  .icon__varna {
+    position: relative;
+    width: 85%;
+    flex-direction: row;
+    top: -15%;
+    right: -18%;
+  }
+
+  .icon__varna svg {
+    position: absolute;
+    width: 66px;
+    height: 71px;
+    top: -5% !important;
+    right: -9% !important;
+    
+  }
+  .icon__varna:hover svg{
+    position: absolute;
+    /* overflow: visible; */
+    width: 66px;
+    height: 71px;
+    top: 90% !important;
+    right: 19% !important;
+  }
+
+  .div__map__wheel__varna{
+    width: 26.018px;
+    height: 26.048px;
+    flex-shrink: 0;
+    left: -35%;
+    top: 26% !important;
+    
+  }
+  .div__map__wrench__varna{
+    width: 17.112px;
+    height: 17.111px;
+    flex-shrink: 0;
+    left: -30% !important;
+    top: 33% !important;
+  }
+
+  .icon__varna:hover .div__map__wheel__varna {
+    
+    left: 60% !important;
+  }
+  
+  .icon__varna:hover .div__map__wrench__varna {
+    left: 61% !important;
   }
 
   /* footer */
