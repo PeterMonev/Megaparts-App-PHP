@@ -1062,11 +1062,19 @@
     display: none;
   }
 
+  .icon__info__varna{
+    top: 20%;
+    
+    width: 12%;
+    
+    height: 22%;
+  }
+
   .icon__info__varna i{
     
     display: none;
   }
-  
+
   .icon__info__varna svg{
     display: inline;
    transform: rotate(180deg);
