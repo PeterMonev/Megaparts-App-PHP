@@ -1184,6 +1184,10 @@ width: 10%;
   margin-top: 20px;
 }
 
+#navLower__ul__buttons {
+  overflow: hidden;
+}
+
 .carouselComment__p {
   color: #19242d;
   text-align: center;

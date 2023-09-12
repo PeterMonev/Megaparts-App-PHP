@@ -3,26 +3,26 @@ const lowerNav = document.querySelector("#lower__nav");
 
 // COMMENT THIS FUCNTION FOR PIXEL PERFECT!
 
-// function setSticky() {
-//     gsap.set(lowerNav, {
-//         position: "fixed",
-//         top: 0,
-//         left: 0,
-//         right: 0
-//     });
-// }
+function setSticky() {
+    gsap.set(lowerNav, {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0
+    });
+}
 
-// function unsetSticky() {
-//     gsap.set(lowerNav, { clearProps: "all" });
-// }
+function unsetSticky() {
+    gsap.set(lowerNav, { clearProps: "all" });
+}
 
-// ScrollTrigger.create({
-//     trigger: lowerNav,
-//     start: "top top",
-//     end: "bottom bottom",
-//     onEnter: setSticky,
-//     onLeaveBack: unsetSticky
-// });
+ScrollTrigger.create({
+    trigger: lowerNav,
+    start: "top top",
+    end: "bottom bottom",
+    onEnter: setSticky,
+    onLeaveBack: unsetSticky
+});
 
 $(document).ready(function () {
   $("#navLower__ul__buttons .carousel-li button").on("click", function () {
@@ -132,7 +132,7 @@ $("#div__lastOffers__offers").flickity({
   draggable: false,
   freeScroll: false,
   wrapAround: false,
-  autoPlay: false,
+  autoPlay: true,
   pauseAutoPlayOnHover: false,
   prevNextButtons: false,
 });
@@ -162,8 +162,12 @@ gsap.from("#div__lastOffers", {
 });
 
 // Info Blocks
-let windowWidth = window.innerWidth;
-console.log(windowWidth);
+const windowWidth = window.outerWidth;
+
+if(windowWidth > 769){
+ 
+
+// Info Blocks
 // First Block
 
 gsap.from("#article__infoBlocks__first", {
@@ -211,6 +215,7 @@ gsap.from("#article__infoBlocks__fourth", {
     toggleActions: "play none none none",
   },
 });
+
 
 // Small Info Block
 
@@ -261,6 +266,118 @@ gsap.from("#article__smallInfoBlocks__fourth", {
     toggleActions: "play none none none",
   },
 });
+
+} else {
+
+  function setSticky() {
+    gsap.set(lowerNav, {
+        position: "relative",
+        top: '-10',
+        left: 0,
+        right: 0
+    });
+}
+
+  // First Block
+
+gsap.from("#article__infoBlocks__first", {
+  x: "200%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#section__smallInfoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+// Second Block
+
+gsap.from("#article__infoBlocks__second", {
+  x: "-200%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#section__smallInfoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+// Third Block
+
+gsap.from("#article__infoBlocks__third", {
+  x: "200%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#section__smallInfoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+// Fourth Block
+
+gsap.from("#article__infoBlocks__fourth", {
+  x: "-200%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#section__smallInfoBlocks",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+
+// Small Info Block
+
+// First Block
+
+gsap.from("#article__smallInfoBlocks__first", {
+  x: "200%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section__comments",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+// Second Block
+
+gsap.from("#article__smallInfoBlocks__second", {
+  x: "-200%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section__comments",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+// Third Block
+
+gsap.from("#article__smallInfoBlocks__third", {
+  x: "200%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section__comments",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+// Fourth Block
+
+gsap.from("#article__smallInfoBlocks__fourth", {
+  x: "-200%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section__comments",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+}
 
 // Comments Carousel
 
@@ -333,4 +450,28 @@ resizeCells();
 
 $imagesCarousel.on("scroll.flickity", function () {
   resizeCells();
+});
+
+// Carousel Comment Scroll Animaiton
+
+gsap.from(".section__comments", {
+  x: "-290%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section__map",
+    start: "top bottom",
+    toggleActions: "play none none none",
+  },
+});
+
+// Map Scroll Animation
+
+gsap.from(".section__map", {
+  x: "-290%",
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section__comments",
+    start: "bottom center",
+    toggleActions: "play none none none",
+  },
 });
