@@ -132,7 +132,7 @@ $("#div__lastOffers__offers").flickity({
   draggable: false,
   freeScroll: false,
   wrapAround: false,
-  autoPlay: true,
+  autoPlay: 1000,
   pauseAutoPlayOnHover: false,
   prevNextButtons: false,
 });
